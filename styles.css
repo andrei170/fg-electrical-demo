@@ -90,4 +90,52 @@ footer h4{color:#fff;font-size:13px;letter-spacing:1px;text-transform:uppercase;
 footer ul{list-style:none;margin:0;padding:0}footer li{margin-bottom:6px}
 footer .legal{border-top:1px solid #1b2a3c;margin-top:22px;padding-top:16px;font-size:12px;
 color:#6f8196;line-height:1.6}
-@media(max-width:900px){.hero .grid{grid-template-columns:1fr}.hero h1{font-size:27px}}
+
+img{max-width:100%;height:auto}
+h1,h2,h3,p,li,a{overflow-wrap:break-word}
+.mcall{display:none;position:fixed;left:0;right:0;bottom:0;z-index:50;
+background:var(--rust);box-shadow:0 -4px 18px rgba(0,0,0,.3)}
+.mcall a{flex:1;color:#fff;text-decoration:none;text-align:center;padding:15px 8px;
+font-weight:800;font-size:16px;letter-spacing:-.2px}
+.mcall a+a{border-left:1px solid rgba(255,255,255,.35);background:var(--navy)}
+@media(max-width:900px){.hero .grid{grid-template-columns:1fr}.hero h1{font-size:27px}
+.cards{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}}
+@media(max-width:760px){
+html,body{-webkit-text-size-adjust:100%}
+body{padding-bottom:62px}
+.wrap{padding:0 16px}
+.top .wrap{justify-content:center;text-align:center;padding:7px 16px}
+.top .em{display:none}
+header{position:static}
+header .wrap{flex-wrap:wrap;gap:9px;padding:10px 16px}
+.logo{font-size:17.5px}
+nav.main{order:3;width:100%;flex-wrap:nowrap;overflow-x:auto;gap:4px;padding-bottom:3px;
+-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{white-space:nowrap;padding:9px 12px}
+.callbtn{padding:11px 14px;font-size:14px}
+.hero{padding:22px 0 26px}
+.hero h1{font-size:25px;letter-spacing:-.4px}
+.hero p.lede{font-size:16px}
+.urgent{font-size:14.5px;padding:11px 13px}
+.quote{padding:18px 17px}
+.quote .row{grid-template-columns:1fr}
+.quote input,.quote select,.quote textarea{font-size:16px}
+.quote button{padding:15px;font-size:17px}
+section{padding:28px 0}
+h2.sec{font-size:21px}
+p.sub{font-size:15px}
+.cards,.steps,.trust{grid-template-columns:1fr}
+.areas a{font-size:14.5px;padding:9px 15px}
+.cta{padding:28px 0}
+.cta a.b{display:block;text-align:center;padding:15px;margin-bottom:10px}
+footer .g{grid-template-columns:1fr 1fr}
+.mcall{display:flex}
+}
+@media(max-width:400px){
+.hero h1{font-size:22px}
+h2.sec{font-size:19.5px}
+nav.main a{font-size:13.5px;padding:9px 10px}
+.badges span{font-size:12px}
+footer .g{grid-template-columns:1fr}
+}
